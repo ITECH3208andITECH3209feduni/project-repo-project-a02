@@ -1,4 +1,3 @@
-<script>
     function password_show_hide() {
         var x = document.getElementById("password");
         var show_eye = document.getElementById("show_eye");
@@ -29,4 +28,4 @@ function fasterPreview( uploader ) {
 $("#imageUpload").change(function(){
     fasterPreview( this );
 })
-</script>
+
