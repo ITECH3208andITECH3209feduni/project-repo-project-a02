@@ -1,0 +1,9 @@
+<?php
+// session_start();
+require_once 'vendor/autoload.php';
+$client = new Google_Client();
+$client->setClientId("321390589989-r0kd0kikvi36qcdjn1g9mqduopjsr03a.apps.googleusercontent.com");
+$client->setClientSecret('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');
+$client->setApplicationName('cvBuilder');
+$client->setRedirectUri('http://localhost/cvBuilder/GoogleLogin/g-callback.php');
+$client->setScopes(array( 'https://www.googleapis.com/auth/plus.login' ,'https://www.googleapis.com/auth/userinfo.email' ));
